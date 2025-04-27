@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Tech Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .about-link {
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            background-color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .product-card p {
+            color: #86868b;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1d1d1f;
+        }
+
+        .specs {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #86868b;
+        }
+
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>АКСЕССУАРЫ</h1>
+        <a href="about.html" class="about-link">About Us</a>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="mac.html">Mac</a>
+            <a href="iphone.html">iPhone</a>
+            <a href="ipad.html">iPad</a>
+            <a href="accessories.html">АКСЕССУАРЫ</a>
+            <a href="playstation.html">PlayStation</a>
+            <a href="apple-watch.html">Apple Watch</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRgtXVDQN1CFHAnm3lWTApfSOVclITIMCGPHiBnMbpCkO5got5l8i_knGT7qYHc1ib1wYnWCbKqGetf-7uPIoVJlu5KR2u_syzRCYor28s&usqp=CAc" alt="AirPods Pro">
+                <h3>Мышь Apple Magic Mouse 3 Gray</h3>
+                <div class="price">76 000 ₸</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTZOaFGIYh3UmCZH-kQmyTlgugzHiZCXszdLpnz7RR7YSfd8l5qFZRzfnL2J8kz2Vf9f3KohdMlozLZm4vneb3E2EZAJAzneifUdRemByQ&usqp=CAc" alt="AirPods">
+                <h3>Мышь Apple Magic Mouse 3 Silver</h3>
+                <div class="price">54 000 ₸</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="data:image/jpeg;base64,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" alt="Apple Watch Series 9">
+                <h3>Клавиатура Apple Magic Keyboard for iPad Pro 12.9" US English, Black</h3>
+                <div class="price">151 000 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRYX3vadxn1jNDZTZbbNggg739NGPglMXRE7GhKy8m9XhmC-bJ0iJpdAAyEL-AD7ihimUjIFhfn41cdgobaLTwd9-3QX1-ZE6T1Fn_Mssc&usqp=CAc" alt="Apple Watch SE">
+                <h3>Клавиатура Apple Magic Keyboard for 11" iPad Pro (Black, English)</h3>
+                <div class="price">159 000 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRvUtgBSZonCYQSTGMFKGe25ocXrBB_k7-Ibq4xbx3PFaszC65awEu7DcUdZhuitr4OjuVTDGTATyAQypRbRZjq-tdtruWojNp1034uS_Q&usqp=CAc" alt="Apple Pencil">
+                <h3>Внешний аккумулятор Apple MagSafe Battery Pack (Белый)</h3>
+                <div class="price">75 700 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="data:image/jpeg;base64,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" alt="Apple Pencil">
+                <h3>Сетевое зарядное устройство Apple 20W USB-C MHJE3ZM/A White</h3>
+                <div class="price">15 000 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX////7+/vw8PD8/Pz09PTZ2dnS0tLp6en19fXr6+vu7u74+PjX19fn5+fc3Nzg4OBERETMzMxQUFCvr688PDy/v7+EhIRVVVVmZmZ6enpwcHCioqJaWlqrq6t3d3cvLy+7u7tdnDsOAAAC7UlEQVR4nO2d27KjIBBFhUYUiBKTeCaZ2zn//5WDmpqqeR/KYvdeL3llVbfdDZiy6wghhBBCCCGEEEIIIYSQ/4388wOKG3KOBtgxTCEUx7OXUQ83ROfs5C1spgbnxmSHS3/2QqoRTErJDb0/eyG1kCjJQBt2djcM0IYG3bAz6FmqxBA8SwXb0BVD44YLrqHt0mbYe9ShrcRQJI1hho2h+Ri/ZXd/3m6ok7d5yaPv7t9vVxFMRfORH37cDc9eSiXMa70u+cfz51VAt/nplR5z+oUcw9/mc5b78/pArTQSyh7YxOyXs1dSCykzjTEj8uQdj6mtGKJmaZnaDLThe2+BnKVKDKErzRHDCd4QeY+v4pzm3S1QoWH7aDFkpWkZ+3dvgcphCJ6l+IasNI3zNoS+e4KPodCwdawI+psKNGweLYbQMw0Nm+foh+CG6DtggZ+8lTyH2FmqoePjx5CGbUPD9jkM0fshereAv8dXEkNkw8gsbZ598sZ+r01BP+RM0zpaOj624X6KAX7WpqHS0LBlaNg+Ogzx+yH61NbRsHF0VBpwQwOfpQb+hnSPIbYhfMc3gv4/YBo2z/Yc4lca/H4IbShaDIHPS/FjuHcL+FpKw8bRsHuiYeuomLzxKw36//EZw+ZhDNvHJfQYKjBUcRKFfuaNf2+hwRA9S+Hf8953T9gxxL/lxq80+CfCGrIU/ZwG/znEj6GAfxtBRy1Fz1Iato4CwwR/M0PD5imG6P0wwZ/T4Buq2FuAP4cKzkvhZxoaNs/RLWjYMm9D3Legu1jm0mQnYEN7GHrgb1iOkkabgQ2d3UaaeZlhDceYnJ36dTp7IdVIIdmY/erOXkgtRCYXh+y/zl5IRaILw7zAfrS6YGPIl/Vy9jIqMk5TSVLcQrN9XX1ZvhbYQlMQn7NfUJvhziXnUmiQFad+m2iQiZd+DWcvoipp8Ws6exF18R6532/MC+72d0cG4I3FgVjkVkEIIYQQQgghhBBCCCGE1OQP8CsfGm1bHvsAAAAASUVORK5CYII=" alt="Magic Keyboard">
+                <h3>Стилус Apple Pencil (2nd Generation)</h3>
+                <div class="price">65 000 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANEAAADxCAMAAABiSKLrAAAAQlBMVEX////4+Pj09PTp6enx8fHR0dH8/PzV1dX5+fny8vLs7OzZ2dno6Ojj4+PU1NTi4uLHx8fAwMC4uLixsbF8fHzExMRMGvGbAAACOElEQVR4nO3dwY6bMBhFYWPgx7EBk2n7/q9aaDWz7gKJO7fnW2TtIxvHJEikBAAAAAAAAAAAAAD4ZuLzIx4eCP4nYbfgzpxS68uoqqRt2Wqd8tMDuUtEPvr6GvLkMkuR2rzlaRqG4emh3CRib+twFfksu32v55obIrtsejEvX0UerqK8TVGsitb3PHgVDfMeRjvDWVTei9UctZrfzawoPo7itOpare/VbI76R89ec7T+8Fp1S91+fiSrorGc5yCvoqFOJVsV5WEqVifV8bzj89oZxpKt7viu64giaRTpo0gfRfoo0keRPor0mRa9KFJGkT6K9FGkjyJ9FOmjSJ9pkdfzdX//EbN6noEidRTpo0gfRfo8iwzPdRRJo0if515HkTaK9HnudRRpo0if515HkTaK9FGkjyJ9nkV+/8P6neso0kaRPs/dmyJtFOmjSB9F+ijSR5E+ivRRpI8ifZ5Ffr+cUKSNIn0U6aNIn2NRo0gcRfpMi+ye0PC746NIm2NRo0gcRfoci8z2uoh5X7PZuW5fvU6qaT/nyOqk+vVeS5+iPvdXrT5FkaZffZxew2Tz7tFUjrbWs6g8PZSbREpzW8eca3J59WhKy7KN5zfS0yO5TUSft5qrTVGkGOc+5uqy1V1J+WjbunpcRJdzko6j9c2n6DrZzXWqT4/iPhGpH6vPxpD+XEjz+YX09DBuFFHmbXS6jM6kpY9hlZR6qyZHoE+1OV1GlzKZLToAAAAAAAAAAAAAAIB/9hv46Bxn6dTSswAAAABJRU5ErkJggg==" alt="Magic Mouse">
+                <h3>Стилус Apple Pencil Pro</h3>
+                <div class="price">83 600 ₸</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

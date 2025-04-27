@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone - Tech Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .about-link {
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            background-color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .product-card p {
+            color: #86868b;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1d1d1f;
+        }
+
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>iPhone</h1>
+        <a href="about.html" class="about-link">About Us</a>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="mac.html">Mac</a>
+            <a href="iphone.html">iPhone</a>
+            <a href="ipad.html">iPad</a>
+            <a href="accessories.html">АКСЕССУАРЫ</a>
+            <a href="playstation.html">PlayStation</a>
+            <a href="apple-watch.html">Apple Watch</a>
+            
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ3p5THhvZ6gIQYg_f7I4VUn3bkk2X5Rp5Z0CzT-2N7zgXT9uQcoAk8D_vHzS46svDWCn2-Z5dO1KcQIjvO0g0jZgHTYeTtTQAj_lT5LSmSs4Y&usqp=CAc" alt="iPhone 15 Pro">
+                <h3>iPhone 11 64GB White</h3>
+                <div class="price">195 800 ₸</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSKGRJf1KB5MWYIRD0xBLE4RBbusYkOU0qG-ZUJTTCwaC_-hWgLlhOR23P6E1cZ1NwcY2dC_ZyPGQuppuMzyHVy22LnRML30QxEDu-G0S5CCDs&usqp=CAc" alt="iPhone 15">
+                <h3>iPhone 11 64GB Black</h3>
+                <div class="price">209 000 ₸</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRsaDdhhhQj504lPPlnRjZ-IzuqPB4ckxxr21pnb3PJ4RzGnrM0AIR3-zgkC3v27OMDJi4a8KAJwVRYMP3I7_8VTU7_y6NV99-BWXgSVqWPHTIy&usqp=CAc" alt="iPhone 14 Pro">
+                <h3>iPhone 15 256Gb Black</h3>
+                <div class="price">422 900 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcThJYsWW_xIJZHLiFk2H1A-Q9_-qBiYReLXt7HUKuAmFFp26U_WM4NhkloG-TSD-ccrVqKxdCDmbsW4NiUkZA-W5jwlVnAAWiaDjA3zunFhlA&usqp=CAc" alt="iPhone 14">
+                <h3>iPhone 15 256Gb Blue</h3>
+                <div class="price">456 900 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQf55nNwNAh7fZjAwMgGmSpoYeXVgT8SaUpEpzv0urH3YdrRm7qzIkzXhkZAz6_q9FLQIEkiAwF0FcyI88XYXIAUaiWuiCAPr4z4xpLvhK3MfA&usqp=CAc" alt="iPhone 13">
+                <h3>iPhone 15 256Gb Green</h3>
+                <div class="price">464 000 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="data:image/jpeg;base64,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" alt="iPhone SE">
+                <h3>iPhone 15 128Gb Pink</h3>
+                <div class="price">375 000 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcThJYsWW_xIJZHLiFk2H1A-Q9_-qBiYReLXt7HUKuAmFFp26U_WM4NhkloG-TSD-ccrVqKxdCDmbsW4NiUkZA-W5jwlVnAAWiaDjA3zunFhlA&usqp=CAc" alt="iPhone 13 mini">
+                <h3>iPhone 15 128Gb Blue</h3>
+                <div class="price">452 700 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRsaDdhhhQj504lPPlnRjZ-IzuqPB4ckxxr21pnb3PJ4RzGnrM0AIR3-zgkC3v27OMDJi4a8KAJwVRYMP3I7_8VTU7_y6NV99-BWXgSVqWPHTIy&usqp=CAc" alt="iPhone 12">
+                <h3>iPhone 15 128Gb Black</h3>
+                <div class="price">391 000 ₸</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

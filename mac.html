@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac - Tech Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .about-link {
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            background-color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .product-card p {
+            color: #86868b;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1d1d1f;
+        }
+
+        .specs {
+            color: #86868b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mac</h1>
+        <a href="about.html" class="about-link">About Us</a>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="mac.html">Mac</a>
+            <a href="iphone.html">iPhone</a>
+            <a href="ipad.html">iPad</a>
+            <a href="accessories.html">АКСЕССУАРЫ</a>
+            <a href="playstation.html">PlayStation</a>
+            <a href="apple-watch.html">Apple Watch</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://resources.cdn-kaspi.kz/img/m/p/hd3/h7b/84577188020254.jpg?format=gallery-medium" alt="MacBook Pro 14">
+                <h3>Ноутбук Apple MacBook Pro 14 2023 14.2" / 18 Гб / SSD 512 Гб / macOS / MRX33RU/A</h3>
+                <div class="price">998 997 ₸</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://resources.cdn-kaspi.kz/img/m/p/he8/h19/84576769900574.jpg?format=gallery-medium">
+                <h3>Ноутбук Apple MacBook Pro 14 2023 14.2" / 18 Гб / SSD 512 Гб / macOS / MRX63RU/A</h3>
+                <div class="price">989 498 ₸</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://resources.cdn-kaspi.kz/img/m/p/p0e/p0b/5539818.jpg?format=gallery-medium" alt="MacBook Air">
+                <h3>Ноутбук Apple MacBook Pro 16 2021 16" / 16 Гб / SSD 512 Гб / macOS / MK183RU/A</h3>
+                <div class="price">825 000 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://resources.cdn-kaspi.kz/img/m/p/he4/h08/84580859674654.jpg?format=gallery-medium" alt="iMac">
+                <h3>Ноутбук Apple MacBook Pro 14 2023 14.2" / 8 Гб / SSD 512 Гб / macOS / MR7J3</h3>
+                <div class="price">856 850 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://resources.cdn-kaspi.kz/img/m/p/hf6/h95/68379275755550.jpg?format=gallery-medium" alt="Mac mini">
+                <h3>Ноутбук Apple MacBook Pro 14 2023 14.2" / 16 Гб / SSD 512 Гб / macOS / MPHE3</h3>
+                <div class="price">1 190 399 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://resources.cdn-kaspi.kz/img/m/p/p32/p89/17666424.jpg?format=gallery-medium" alt="Mac Studio">
+                <h3>Ноутбук Apple MacBook Pro 14 2024 14.2" / 16 Гб / SSD 512 Гб / macOS / MW2U3RU/A</h3>
+                <div class="price">947 970 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://resources.cdn-kaspi.kz/img/m/p/hde/h0e/84581205803038.jpg?format=gallery-medium" alt="Mac Pro">
+                <h3>Ноутбук Apple MacBook Pro 14 2023 14.2" / 8 Гб / SSD 1024 Гб / macOS / MTL83RU/A</h3>
+                <div class="price">973 500 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://resources.cdn-kaspi.kz/img/m/p/p53/p94/14345267.jpg?format=gallery-medium" alt="MacBook Air M1">
+                <h3>Ноутбук Apple MacBook Air 13 2024 13.6" / 16 Гб / SSD 256 Гб / macOS / MC8K4</h3>
+                <div class="price">581 671 ₸</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

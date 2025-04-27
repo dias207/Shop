@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPad - Tech Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            background-color: #333;
+        }
+
+        .about-link {
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            text-decoration: none;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .product-card p {
+            color: #86868b;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1d1d1f;
+        }
+
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>iPad</h1>
+        <a href="about.html" class="about-link">About Us</a>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="mac.html">Mac</a>
+            <a href="iphone.html">iPhone</a>
+            <a href="ipad.html">iPad</a>
+            <a href="accessories.html">АКСЕССУАРЫ</a>
+            <a href="playstation.html">PlayStation</a>
+            <a href="apple-watch.html">Apple Watch</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQmhYGfo1XmXS-Re6B9FG94hDw9RLrauzCCAMtAD_MXP6AZqUK8ckh8BMmt91teKGe6rRQB3s3UmlhNQXFwOeY5YmrZU2kwU1BSIxFDRbw600bV&usqp=CAc" alt="iPad Pro">
+                <h3>Планшет Apple iPad 10.9" 2022 10th Gen, 64GB Wi-Fi + Cellular, Blue</h3>
+                <div class="price">359 000 ₸</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTq51xbP-0vBZzzKOo-JHlE6bydyZ5jhJJcndSOKGQFo5kQsMyzc12ocCFUTDDVdHMrv02sI6E_mT03tjzv_HmKNATiaKVpw8JsVS-_WbrjWP4&usqp=CAc" alt="iPad Pro">
+                <h3>Планшет Apple iPad 10.9" 2022 10th Gen, 64GB Wi-Fi + Cellular, Silver</h3>
+                <div class="price">295 000 ₸</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQaYwvtCUKQyZ6daGWAhxPThH964h-1lTB5Tp6Us21YcWKVd0-FftTyRpXiNbG2if6cb-uRA48tzXeJoypMR7s-ai_-Vv5WwUH29cK0S-Vt4-8&usqp=CAc" alt="iPad Air">
+                <h3>Apple iPad Pro 13 M4 (2024) 512Gb Wi-Fi + Cellular Space pro Black</h3>
+                <div class="price">818 000 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS6mJNsSlkdesd8h91gqJ0qpEy3fAEzdEGGW6-yN-Nkhc4gsA5D77cVsUOMxaDhn2U4kItX8e74eHFUVD4wZPYmRsUQ4V6Lfk2GVK0xgBsDUv70&usqp=CAc" alt="iPad">
+                <h3>Apple iPad Pro 13 M4 (2023-2024) 512Gb Wi-Fi + Cellular pro Silver </h3>
+                <div class="price">801 000 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQaYwvtCUKQyZ6daGWAhxPThH964h-1lTB5Tp6Us21YcWKVd0-FftTyRpXiNbG2if6cb-uRA48tzXeJoypMR7s-ai_-Vv5WwUH29cK0S-Vt4-8&usqp=CAc" alt="iPad">
+                <h3>Apple iPad Pro 13 M4 (2024) 512Gb Wi-Fi Space Black</h3>
+                <div class="price">730 000 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQaYwvtCUKQyZ6daGWAhxPThH964h-1lTB5Tp6Us21YcWKVd0-FftTyRpXiNbG2if6cb-uRA48tzXeJoypMR7s-ai_-Vv5WwUH29cK0S-Vt4-8&usqp=CAc" alt="iPad mini">
+                <h3>Apple iPad Pro 13 M4 (2024) 256Gb Wi-Fi Space Black</h3>
+                <div class="price">636 900 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRBoRy9VfS55ys88IFn7gr2Th-e7Rl6Gjfl-xiBQvl12lGYv1FavB18YqI0cKxy8u1h6MOWVAW8W_oXA1Su56zsOfp7VTvGXAPAptIt7LvG4oW0&usqp=CAc" alt="iPad Pro">
+                <h3>Apple iPad Pro 13 M4 (2024) 256Gb Wi-Fi + Cellular Space White</h3>
+                <div class="price">713 000 ₸</div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSnvVj3YGSh5kk0U-HxDwdokpYgKYOVgo-ddzFb6vBW0oQMm2LmQpyScUqaskfbo5nUcSd49oUttSymbxzUA0cIjVO-oh9Mx7UPYz5jDxezt58&usqp=CAc" alt="iPad Pro">
+                <h3>Apple iPad Pro 13 M4 (2024) 1Tb Wi-Fi + Cellular Space Black</h3>
+                <div class="price">1 084 000 ₸</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
